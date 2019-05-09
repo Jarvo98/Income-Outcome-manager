@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ingresos/Egresos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/funciones.js"></script>
+    <script src="js/register.js"></script>
+</head>
+
+<body style="background-color: #f3fafb">
+    <nav class="d-flex justify-content-between p-2">
+        <div>
+            <i class="fas fa-home" style="font-size: 30px;color: #007bff"></i>
+        </div>
+        <div class="btn-group">
+            <a href="login.html" class="btn btn-outline-primary btn-sm">Iniciar sesi&oacute;n</a>
+            <a href="#" class="btn btn-primary btn-sm disabled">Registrarse</a>
+        </div>
+    </nav>
+
+    <div class="alert alert-success" id="registerCorrect">
+        <strong><i class="fas fa-check"></i></strong> Usuario registrado correctamente.
+    </div>
+
+    <div class="alert alert-danger" id="registerFailed">
+        <strong><i class="fas fa-times"></i></strong> Hubo un error registrando este usuario.
+    </div>
+
+    <main class="d-flex flex-column align-items-center justify-content-center">
+        <div class="border rounded p-3">
+            <form>
+                <div class="form-group">
+                    <label for="userName">Nombre de usuario:</label>
+                    <input type="text" name="userName" id="userName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPassword">Contrase&ntilde;a:</label>
+                    <input type="password" name="userPassword" id="userPassword" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPasswordConfirm">Confirmar contrase&ntilde;a:</label>
+                    <input type="password" name="userPasswordConfirm" id="userPasswordConfirm" class="form-control"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Registrarse</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

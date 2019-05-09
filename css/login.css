@@ -1,0 +1,15 @@
+/* Login page's stylesheet */
+body {
+    background-color: #f3fafb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > div {
+    background-color: #ffffff;
+}
